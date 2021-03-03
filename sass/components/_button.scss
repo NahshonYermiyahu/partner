@@ -1,0 +1,31 @@
+.btn-transparent {
+  @include d-flex-center;
+  height: 4.4rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  color: $color-primary-green;
+  border: 2px solid $color-primary-green;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.84rem;
+    padding-left: 1rem;
+  }
+
+  img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+.btn-green {
+  @include d-flex-center;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  background-color: $color-primary-green;
+  color: $color-primary-white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.84rem;
+}

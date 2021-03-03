@@ -1,0 +1,42 @@
+.main-header {
+  height: 53.6rem;
+  width: 100%;
+  background-image: url("../img/main-header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+
+  &-container {
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 50;
+    background-color: transparent;
+    height: 100%;
+    padding: 6.8rem 0 5.6rem 11.46%;
+    @include d-flex-column-between;
+
+    p {
+      font-size: 1.8rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 2.8rem;
+      text-align: left;
+      color: $color-primary-gray;
+    }
+
+    h1 {
+      color: $color-primary-0B;
+      span {
+        color: $color-primary-green;
+      }
+    }
+
+    .btn-green {
+      width: 25.5rem;
+      margin-bottom: 7rem;
+    }
+  }
+
+}

@@ -1,0 +1,107 @@
+.header {
+  height: 13.2rem;
+  width: 100%;
+
+  &__top {
+    height: 8.4rem;
+    display: flex;
+    background-color: $color-primary-white;
+
+    .top-left {
+      width: 48%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 3.8rem;
+        height: 3.8rem;
+      }
+
+      &__heading {
+        color: $color-primary-0B;
+        padding-left: 0.747rem;
+
+        p:nth-child(1) {
+          font-size: 2.4rem;
+          font-weight: 700;
+          line-height: 2.76rem;
+          letter-spacing: -0.02rem;
+          text-align: left;
+        }
+
+        p:nth-child(2) {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.38rem;
+          text-align: left;
+
+        }
+      }
+    }
+
+    .top-right {
+      width: 52%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      &__call{
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.84rem;
+        text-align: center;
+      }
+
+      &__btn{
+        width: 19.8rem;
+      }
+
+      &__gift{
+        background-color: $color-primary-green;
+      }
+
+      &__menu {
+        @include d-flex-center;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 1.8rem;
+          text-align: center;
+          margin-right:  2rem;
+        }
+
+        img {
+          width: 4.4rem;
+          height: 4.4rem;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+  &__nav {
+    height: 4.8rem;
+    background-color: $color-primary-1A;
+    color: $color-primary-white;
+
+    &-container {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        width: 25%;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,20 @@
+.slider {
+
+  display: flex;
+
+  &__item {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid $color-primary-green;
+
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+
+  .active {
+    background-color: $color-primary-green;
+  }
+
+}
