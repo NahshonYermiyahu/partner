@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partner</title>
+<!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">-->
   <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -41,22 +42,23 @@
     <nav class="header__nav">
       <div class="container header__nav-container">
         <a href="#">
-          <h4>Бухгалтерские услуги</h4>
+          <h6>Бухгалтерские услуги</h6>
         </a>
         <a href="#">
-          <h4>Налоговый учёт</h4>
+          <h6>Налоговый учёт</h6>
         </a>
         <a href="#">
-          <h4>Регистрация ООО/ИП</h4>
+          <h6>Регистрация ООО/ИП</h6>
         </a>
         <a href="#">
-          <h4>Тарифы</h4>
+          <h6>Тарифы</h6>
         </a>
       </div>
     </nav>
     <!-- /.header__nav -->
   </header>
   <!-- /.header -->
+
   <main>
     <div id="home" class="home">
       <section class="main-header">
@@ -78,6 +80,7 @@
         </div>
       </section>
       <!-- /.main-header -->
+
       <section class="your-time container">
         <h2 class="your-time__heading">Мы ценим ваше время</h2>
         <div class="your-time__block">
@@ -85,7 +88,7 @@
             <div class="block-img">
               <img src="icons/clipboard-check.svg" alt="clipboard-check">
             </div>
-            <h3>Индивидуальный подход</h3>
+            <h4>Индивидуальный подход</h4>
             <p>Подберем самые выгодные<br> условия сотрудничества<br>
               для каждого клиента</p>
           </div>
@@ -93,7 +96,7 @@
             <div class="block-img">
               <img src="icons/star.svg" alt="star">
             </div>
-            <h3>Профессионалы</h3>
+            <h4>Профессионалы</h4>
             <p>Все наши сотрудники -<br> квалифицированные специалисты <br>
               с большим опытом работы</p>
           </div>
@@ -101,12 +104,11 @@
             <div class="block-img">
               <img src="icons/plus-circle.svg" alt="plus-circle">
             </div>
-            <h3>Онлайн и офлайн</h3>
+            <h4>Онлайн и офлайн</h4>
             <p>Получайте консультацию <br> профессионального бухгалтера <br>
               в удобном формате</p>
           </div>
           <div class="block-item">
-
             <div class="block-inner">
               <div class="inner">
                 <p>2 000+</p>
@@ -116,7 +118,6 @@
                 <a href="#" class="btn-transparent">Подробнее о нас</a>
               </div>
             </div>
-
           </div>
         </div>
         <p class="your-time__text">
@@ -124,7 +125,248 @@
           к выполнению задач в срок и контролируем качество услуг
         </p>
       </section>
-      <!-- /.your-tim -->
+      <!-- /.your-time -->
+
+      <section class="services">
+        <div class="services__top container">
+          <div class="services__top-left">
+            <h2>Наши услуги</h2>
+            <p>Бухгалтерское Агентство Партнер оказывает<br>
+              все виды услуг в сфере бухгалтерского,<br> обслуживания
+            </p>
+            <a href="#" class="btn btn-transparent">
+              <img src="icons/call.svg" alt="call">
+              <p>Получить консултацию</p>
+            </a>
+          </div>
+          <div class="services__top-right">
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Регистрация ООО и ИП</h5>
+            </div>
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Обслуживание "под ключ"</h5>
+            </div>
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Налоговые консультации</h5>
+            </div>
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Сдача нулевой отчетности</h5>
+            </div>
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Кадровое делопроизводство</h5>
+            </div>
+            <div class="services__top-right-item">
+              <img src="icons/badge-check.svg" alt="badge-check">
+              <h5>Секретарское сопровождение</h5>
+            </div>
+          </div>
+        </div>
+        <!-- /.services-top -->
+        <div class="services__bottom">
+            <form>
+              <div class="services__bottom-left">
+                <h3>Рассчитайте стоимость услуг</h3>
+                <div class="services__bottom-left-forms">
+                  <div class="form-block">
+                    <label for="legal-form">Правовая форма:</label>
+                      <select name="legal-form" id="legal-form">
+                        <option value="ООО">ООО</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                  </div>
+                  <div class="form-block">
+                    <label for="tax-type">Тип налогооблажения:</label>
+                      <select name="tax-type" id="tax-type">
+                        <option value="Упрощенный 15%">Упрощенный 15%</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="services__bottom-left-sliders">
+                  <div class="slider-block">
+                    <div class="slider-block__label" >
+                      <label for="Operations">
+                        Операции
+                        <img src="icons/slider-icon.svg" alt="slider-icon">
+                      </label>
+                      <p>от 23</p>
+                    </div>
+
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="50"
+                        class="slider-input"
+                        list="tickmarks"
+                        id="Operations">
+                    <datalist id="tickmarks">
+                      <option value="0">
+                      <option value="25">
+                      <option value="50">
+                      <option value="75">
+                      <option value="100">
+                    </datalist>
+                  </div>
+                  <div class="slider-block">
+                    <div class="slider-block__label">
+                      <label for="Number-of-people">
+                        Кол-во человек
+                        <img src="icons/slider-icon.svg" alt="slider-icon">
+                      </label>
+                      <p>от 7</p>
+                    </div>
+                    <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="50"
+                        class="slider-input"
+                        list="tickmarks-2"
+                        id="Number-of-people">
+                    <datalist id="tickmarks-2">
+                      <option value="1">
+                      <option value="25">
+                      <option value="50">
+                      <option value="75">
+                      <option value="100">
+                    </datalist>
+                  </div>
+                </div>
+                <p>* Точная стоимость услуг обговаривается индивидуально</p>
+              </div>
+
+              <div class="services__bottom-right">
+                <p>Оптимальный тариф:</p>
+                <p class="optimalRate">2 500 <span>₽</span></p>
+                <input type="submit" value="Попробовать">
+                <p>
+                  <span>+</span> Годовое обслуживание ООО и ИП<br>(скидка 1-е 3 мес 50%)
+                </p>
+              </div>
+            </form>
+        </div>
+      </section>
+      <!-- /.services -->
+
+      <section class="rates container">
+        <div class="rates__heading">
+          <h2>Наши тарифы</h2>
+        </div>
+        <div class="rates__selection">
+          <div class="rates__selection-active">
+            <p>ООО, ИП на ОСНО (Общей Системе)</p>
+          </div>
+          <div class="rates__selection-passive">
+            <p>ООО, ИП на УСН 6%, ЕНВД</p>
+          </div>
+        </div>
+        <div class="rates__cards">
+
+          <div class="card-basic">
+            <div class="card">
+              <div class="card__heading">
+                <p>5 000<span>₽</span></p>
+                <p>/ мес</p>
+              </div>
+              <div class="card__content">
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество документов:</p>
+                    <img src="icons/document-text.svg" alt="document-text">
+                  </div>
+                  <p>до 20 шт</p>
+                </div>
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество сотрудников:</p>
+                    <img src="icons/user-add.svg" alt="user-add">
+                  </div>
+                  <p>до 5 чел</p>
+                </div>
+              </div>
+              <a href="#" class="btn-green">
+                <p>Поробовать</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-basic card-active">
+            <div class="card">
+              <div class="card__heading">
+                <p>10 000<span>₽</span></p>
+                <p>/ мес</p>
+              </div>
+              <div class="card__content">
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество документов:</p>
+                    <img src="icons/document-text.svg" alt="document-text">
+                  </div>
+                  <p>41-60 шт</p>
+                </div>
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество сотрудников:</p>
+                    <img src="icons/user-add.svg" alt="user-add">
+                  </div>
+                  <p>до 5 чел</p>
+                </div>
+              </div>
+              <a href="#" class="btn-green">
+                <p>Поробовать</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-basic">
+            <div class="card">
+              <div class="card__heading">
+                <p>7 000<span>₽</span></p>
+                <p>/ мес</p>
+              </div>
+              <div class="card__content">
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество документов:</p>
+                    <img src="icons/document-text.svg" alt="document-text">
+                  </div>
+                  <p>21-40 шт</p>
+                </div>
+                <div class="card__content-item">
+                  <div>
+                    <p>Количество сотрудников:</p>
+                    <img src="icons/user-add.svg" alt="user-add">
+                  </div>
+                  <p>до 5 чел</p>
+                </div>
+              </div>
+              <a href="#" class="btn-green">
+                <p>Поробовать</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="rates__footer">
+          <a href="#" class="btn-transparent">
+            <img src="icons/pdf-file-1.svg" alt="pdf-file-1">
+            <p>Скачать тарифы в PDF</p>
+          </a>
+          <p>Смотреть все тарифы</p>
+        </div>
+
+      </section>
     </div>
   </main>
 

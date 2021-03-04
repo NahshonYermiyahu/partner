@@ -13,16 +13,28 @@ h2 {
 }
 
 h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+h4 {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
-
 }
 
-h4 {
+h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+h6 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.84rem;
-  text-align: center;
 }

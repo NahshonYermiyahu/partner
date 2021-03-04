@@ -1,1 +1,133 @@
+.card-basic {
+  height: 40.5rem;
+  width: 31.53%;
+  position: relative;
 
+  .card {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem;
+    background-color: $color-background-gray;
+    @include d-flex-column-between;
+
+    &__heading {
+      width: 100%;
+      @include d-flex-left;
+      padding-top: 2.6rem;
+
+
+      p:nth-child(1) {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.68rem;
+
+        span {
+          font-family: Montserrat, sans-serif;
+          font-size: 2.8rem;
+          font-weight: 600;
+          padding-left: 0.8rem;
+        }
+      }
+
+      p:nth-child(2) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-primary-gray;
+        padding-left: 0.8rem;
+        padding-top: 11px;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding-left: 0.7rem;
+      height: 15.2rem;
+
+      border-top: 1px solid $color-border-gray-lite;
+      border-bottom: 1px solid $color-border-gray-lite;
+
+      &-item {
+        width: 100%;
+        height: 50%;
+        @include d-flex-column-evenly;
+
+        &:last-child {
+          border-top: 1px solid $color-border-gray-lite;
+        }
+
+        div {
+          @include d-flex-between;
+          width: 100%;
+
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-primary-gray;
+          }
+
+          img {
+            display: block;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+        }
+      }
+    }
+
+    .btn-green {
+      width: 100%;
+    }
+  }
+}
+
+
+.card-active {
+  background-image: url("../img/card-active.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .card {
+    background-color: transparent;
+
+    &__heading {
+
+      p:nth-child(1) {
+        color: $color-primary-white;
+      }
+    }
+
+    &__content {
+      border-top: 1px solid #27445D;
+      border-bottom: 1px solid #27445D;
+
+      &-item {
+
+        &:last-child {
+          border-top: 1px solid #27445D;
+        }
+
+        p {
+          color: $color-primary-white;
+        }
+      }
+
+
+
+    }
+  }
+}

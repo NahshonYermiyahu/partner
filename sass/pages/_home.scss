@@ -15,8 +15,6 @@
       height: 100%;
       @include d-flex-column-between;
 
-
-
       .block-img {
         background-color: $color-green-lite;
       }
@@ -29,7 +27,6 @@
            font-size: 14px;
            font-weight: 400;
            line-height: 20px;
-           text-align: left;
            color: $color-primary-gray;
          }
       }
@@ -45,7 +42,7 @@
           top:0;
           left:0;
           z-index: 50;
-          background-image: url("../img/Mask Group.svg");
+          background-image: url("../img/your-time.svg");
           background-repeat: no-repeat;
           background-size: cover;
           background-position: right;
@@ -82,12 +79,9 @@
               font-size: 16px;
               font-weight: 700;
               line-height: 18px;
-
             }
-
           }
         }
-
       }
     }
   }
@@ -96,8 +90,283 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
     color: $color-primary-gray;
     align-self: center;
   }
+}
+
+//--------------------end your-time--------------------------------//
+
+.services {
+  width: 100%;
+  height: 91.6rem;
+  background-image: url("../img/services.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__top {
+    height: 38rem;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    padding-bottom: 7.8rem;
+    padding-top: 7.8rem;
+
+    &-left {
+      width: 42.8%;
+      @include d-flex-column-between;
+
+      h2 {
+        color: $color-primary-white;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-primary-gray;
+      }
+
+      .btn-transparent {
+        width: 24.3rem;
+        p {
+          color: $color-primary-green;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 1.84rem;
+        }
+      }
+    }
+
+    &-right {
+      width: 57.2%;
+      margin-top: 1.2rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      flex-wrap: wrap;
+
+      &-item {
+        width: 50%;
+        height: 33.333%;
+        @include d-flex-left;
+        padding-left: 3.4rem;
+
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        h5 {
+          color: $color-primary-white;
+          margin-left: 1rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          line-height: 2.5rem;
+        }
+
+      }
+    }
+  }
+
+  &__bottom {
+    width: 77.08%;
+    height: 42.4rem;
+    margin: 0 11.46%;
+    position: absolute;
+    top:38rem;
+    left: 0;
+    z-index: 50;
+    background-color: $color-primary-white;
+    padding: 4rem 4.2rem 4rem 6.4rem;
+
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    &-left {
+      width: 70%;
+      height: 100%;
+      padding-top: 1.2rem;
+      padding-bottom: 1.9rem;
+      @include d-flex-column-between;
+
+      &-forms {
+        display: flex;
+
+        #tax-type {
+           border-left: none;
+         }
+      }
+
+      &-sliders {
+        display: flex;
+        width: 100%;
+        height: 7rem;
+
+        .slider-block {
+          width: 50%;
+
+          &__label {
+            display: flex;
+            @include d-flex-between;
+            margin-bottom: 2.2rem;
+
+
+            label {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 2rem;
+                height: 2rem;
+                margin-left: 0.9rem;
+              }
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: right;
+              color: $color-primary-gray;
+            }
+          }
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: $color-primary-gray;
+      }
+    }
+
+
+    &-right {
+      width: 30%;
+      height: 100%;
+      background-color: #F4F5F6;
+      padding-top: 5.4rem;
+      padding-bottom: 5.9rem;
+      @include d-flex-column-between-center;
+
+      p:nth-child(1) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      .optimalRate {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.68rem;
+
+        span {
+          font-family: Montserrat, sans-serif;
+          font-size: 2.8rem;
+          font-weight: 600;
+        }
+      }
+
+      input {
+        width: 84.67%;
+        border: none;
+        @include d-flex-center;
+        height: 5.6rem;
+        border-radius: 0.8rem;
+        background-color: $color-primary-green;
+        color: $color-primary-white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.84rem;
+
+        &:active {
+          border: none;
+        }
+      }
+
+      p:last-child {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-primary-gray;
+        text-align: center;
+
+        span {
+          color: $color-primary-green;
+        }
+      }
+    }
+  }
+}
+
+//--------------------end services--------------------------------//
+
+.rates {
+  width: 100%;
+  height: 83.5rem;
+  padding-top: 8.17rem;
+  padding-bottom: 8rem;
+  @include d-flex-column-between;
+
+  &__selection {
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+
+    div {
+      width: 50%;
+      height: 100%;
+      @include d-flex-center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border-bottom: 3px solid $color-primary-green;
+    }
+
+    &-passive {
+      background-color: $color-background-gray;
+    }
+
+    &-active {
+      background-color: $color-primary-green;
+      color: $color-primary-white;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    @include d-flex-between;
+  }
+
+  &__footer {
+    width: 100%;
+    @include d-flex-between;
+
+    .btn-transparent {
+      width: 21.62%;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      color: $color-primary-green;
+    }
+  }
+
+
+
 }

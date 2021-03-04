@@ -6,6 +6,8 @@
     box-sizing: inherit;
 }
 
+*:focus{outline: none;}
+
 html {
     // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
@@ -17,7 +19,7 @@ body {
   font-family: 'Arial', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
-
+  color: $color-primary-0B;
 }
 
 a {

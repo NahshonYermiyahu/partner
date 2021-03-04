@@ -1,1 +1,31 @@
+.form-block {
+  width: 20rem;
+  height: 8.2rem;
 
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  select {
+    width: 100%;
+    height: 4.4rem;
+    border: 1px solid $color-border-gray;
+    background-color: $color-primary-white;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    appearance: none;
+    background-image: url("../img/Frame 9.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem auto, 100%;
+    background-position: right .7em top 50%, 0 0;
+  }
+
+
+}
