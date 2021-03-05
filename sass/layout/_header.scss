@@ -5,13 +5,10 @@
   &__top {
     height: 8.4rem;
     display: flex;
-    background-color: $color-primary-white;
 
     .top-left {
       width: 48%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      @include d-flex-start;
 
       img {
         width: 3.8rem;
@@ -35,17 +32,13 @@
           font-weight: 400;
           line-height: 1.38rem;
           text-align: left;
-
         }
       }
     }
 
     .top-right {
       width: 52%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
+      @include d-flex-between;
 
       &__call{
         font-size: 1.6rem;
@@ -76,14 +69,9 @@
         img {
           width: 4.4rem;
           height: 4.4rem;
-
         }
-
       }
-
-
     }
-
   }
 
   &__nav {
@@ -93,15 +81,12 @@
 
     &-container {
       height: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      @include d-flex-around;
 
       a {
         width: 25%;
+        @include d-flex-center;
       }
     }
   }
-
-
 }

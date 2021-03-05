@@ -21,11 +21,10 @@
     line-height: 24px;
     text-align: left;
     appearance: none;
-    background-image: url("../img/Frame 9.svg");
+    -webkit-appearance: none;
+    background-image: url("../icons/arrow.svg");
     background-repeat: no-repeat;
     background-size: 2rem auto, 100%;
     background-position: right .7em top 50%, 0 0;
   }
-
-
 }

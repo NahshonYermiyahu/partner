@@ -4,9 +4,21 @@
   align-items: center;
 }
 
-@mixin d-flex-left {
+@mixin d-flex-center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin d-flex-start {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin d-flex-end {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -16,32 +28,68 @@
   align-items: center;
 }
 
-@mixin d-flex-column-between {
+@mixin d-flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@mixin d-flex-column-between-start {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+@mixin d-flex-column-evenly-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+@mixin d-flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin d-flex-column-evenly {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-@mixin d-flex-column-between-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
-@mixin d-flex-column-evenly-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+//-------background-------------
+//-------background-------------
+
+@mixin bg-cover-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+//-----input-range---------
+//-----input-range---------
+
+@mixin rangeThumb {
+  width: 18px;
+  height: 18px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: #37adbf;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #b2b2b2;
 }
 
 

@@ -20,6 +20,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: $color-primary-0B;
+  background-color: $color-primary-white;
 }
 
 a {
@@ -47,8 +48,8 @@ button {
 }
 
 .container {
-  max-width: 100%;
-  padding: 0 11.46%;
+  width: 100%;
+  padding: 0 11.3%;
 }
 
 ::selection {

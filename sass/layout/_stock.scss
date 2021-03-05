@@ -1,0 +1,47 @@
+.stock {
+  width: 77.4%;
+  margin: 0 11.3%;
+  height: 35.2rem;
+
+  &__top {
+    background-image: url("../img/stock-bg.svg");
+    @include bg-cover-center;
+    position: relative;
+    height: 30.08rem;
+    width: 100%;
+
+    &-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      z-index: 50;
+      padding: 6rem 6.5rem;
+      @include d-flex-column-between-start;
+      color: $color-primary-white;
+
+      div {
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 1rem;
+        }
+      }
+
+      .btn-transparent {
+        width: 18.4%;
+        color: $color-primary-white;
+        border-color: $color-primary-white;
+      }
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    height: 4.4rem;
+    @include d-flex-center-end;
+  }
+}

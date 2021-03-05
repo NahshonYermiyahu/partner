@@ -1,5 +1,4 @@
 .slider {
-
   display: flex;
 
   &__item {
@@ -18,80 +17,140 @@
   }
 }
 
+
+//--------input-range---------------
+//--------input-range---------------
+
 .slider-block {
-  width: 100%;
-  height: 100%;
-  padding-right: 3.2rem;
-
-  input[type=range] {
+  .value-1,
+  .value-2{
+    text-align: end;
+    font-weight: bold;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 4rem;
+    line-height: 2.4rem;
+    color: $color-primary-green;
+    margin-top: 1rem;
+    letter-spacing: 0.07rem;
+  }
+  input[type="range"] {
+    display: block;
     -webkit-appearance: none;
+    background-color: $color-border-gray;
     width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    //margin: 0 auto;
+    outline: 0;
   }
-  input[type=range]:focus {
-    outline: none;
-  }
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 0.3rem;
-    cursor: pointer;
-    //animate: 0.2s;
-    background: $color-primary-green;
-  }
-  input[type=range]::-webkit-slider-thumb {
-    height: 1.8rem;
-    width: 0.8rem;
-    border-radius: 0.2rem;
-    background: $color-primary-green;
-    cursor: pointer;
+  input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    margin-top: -0.75rem;
-  }
-  input[type=range]:focus::-webkit-slider-runnable-track {
-    background: $color-primary-green;
-  }
-  input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 0.3rem;
-    cursor: pointer;
-    //animate: 0.2s;
-    background: $color-primary-green;
-  }
-  input[type=range]::-moz-range-thumb {
-    height: 1.8rem;
+    background-color: $color-primary-green;
     width: 0.8rem;
-    border-radius: 0.2rem;
-    background: $color-primary-green;
-    cursor: pointer;
-    margin-top: -0.75rem;
-  }
-  input[type=range]::-ms-track {
-    width: 100%;
-    height: 0.3rem;
-    cursor: pointer;
-    //animate: 0.2s;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-  }
-  input[type=range]::-ms-fill-lower {
-    background: $color-primary-green;
-  }
-  input[type=range]::-ms-fill-upper {
-    background: $color-primary-green;
-  }
-  input[type=range]::-ms-thumb {
     height: 1.8rem;
-    width: 0.8rem;
-    border-radius: 0.2rem;
-    background: $color-primary-green;
+    border-radius: 2px;
     cursor: pointer;
-    margin-top: -0.75rem;
+    transition: .3s ease-in-out;
+  }​
+   input[type="range"]::-webkit-slider-thumb:hover {
+     background-color: white;
+     border: 2px solid #e74c3c;
+   }
+  input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.6);
   }
-  input[type=range]:focus::-ms-fill-lower {
-    background: $color-primary-green;
-  }
-  input[type=range]:focus::-ms-fill-upper {
-    background: $color-primary-green;
-  }
-
 }
+
+
+
+
+
+
+
+
+
+
+//<div class="slider">
+//  <div class="slider__item active"></div>
+//  <div class="slider__item"></div>
+//  <div class="slider__item"></div>
+//</div>
+
+//.slider-block {
+//  width: 100%;
+//  height: 100%;
+//  padding-right: 3.2rem;
+//
+//  input[type=range] {
+//    -webkit-appearance: none;
+//    width: 100%;
+//  }
+//  input[type=range]:focus {
+//    outline: none;
+//  }
+//  input[type=range]::-webkit-slider-runnable-track {
+//    width: 100%;
+//    height: 0.3rem;
+//    cursor: pointer;
+//    //animate: 0.2s;
+//    background: $color-primary-green;
+//  }
+//  input[type=range]::-webkit-slider-thumb {
+//    height: 1.8rem;
+//    width: 0.8rem;
+//    border-radius: 0.2rem;
+//    background: $color-primary-green;
+//    cursor: pointer;
+//    -webkit-appearance: none;
+//    margin-top: -0.75rem;
+//  }
+//  input[type=range]:focus::-webkit-slider-runnable-track {
+//    background: $color-primary-green;
+//  }
+//  input[type=range]::-moz-range-track {
+//    width: 100%;
+//    height: 0.3rem;
+//    cursor: pointer;
+//    //animate: 0.2s;
+//    background: $color-primary-green;
+//  }
+//  input[type=range]::-moz-range-thumb {
+//    height: 1.8rem;
+//    width: 0.8rem;
+//    border-radius: 0.2rem;
+//    background: $color-primary-green;
+//    cursor: pointer;
+//    margin-top: -0.75rem;
+//  }
+//  input[type=range]::-ms-track {
+//    width: 100%;
+//    height: 0.3rem;
+//    cursor: pointer;
+//    //animate: 0.2s;
+//    background: transparent;
+//    border-color: transparent;
+//    color: transparent;
+//  }
+//  input[type=range]::-ms-fill-lower {
+//    background: $color-primary-green;
+//  }
+//  input[type=range]::-ms-fill-upper {
+//    background: $color-primary-green;
+//  }
+//  input[type=range]::-ms-thumb {
+//    height: 1.8rem;
+//    width: 0.8rem;
+//    border-radius: 0.2rem;
+//    background: $color-primary-green;
+//    cursor: pointer;
+//    margin-top: -0.75rem;
+//  }
+//  input[type=range]:focus::-ms-fill-lower {
+//    background: $color-primary-green;
+//  }
+//  input[type=range]:focus::-ms-fill-upper {
+//    background: $color-primary-green;
+//  }
+//
+//}
