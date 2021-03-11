@@ -22,3 +22,19 @@
   right: 0;
   transform: translateX(50%) translateY(-50%);
 }
+
+.arrow-left-plain {
+  @include d-flex-center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: $color-primary-white;
+}
+
+.arrow-right-plain {
+  @include d-flex-center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: $color-primary-white;
+}

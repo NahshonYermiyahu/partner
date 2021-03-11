@@ -49,6 +49,13 @@
   align-items: flex-start;
 }
 
+@mixin d-flex-column-start-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 @mixin d-flex-column-between {
   display: flex;
   flex-direction: column;
@@ -69,6 +76,12 @@
 @mixin bg-cover-center {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+@mixin bg-contain-center {
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 

@@ -22,9 +22,9 @@
         border: 1px solid $color-border-gray;
         width: 25.6%;
          p {
-           font-size: 14px;
+           font-size: 1.4rem;
            font-weight: 400;
-           line-height: 20px;
+           line-height: 2rem;
            color: $color-primary-gray;
          }
       }
@@ -64,9 +64,9 @@
             }
 
             p:nth-child(2) {
-              font-size: 14px;
+              font-size: 1.4rem;
               font-weight: 400;
-              line-height: 20px;
+              line-height: 2rem;
             }
 
             .btn-transparent {
@@ -74,9 +74,9 @@
               align-self: center;
               color: $color-primary-white;
               border: 2px solid $color-primary-white;
-              font-size: 16px;
+              font-size: 1.6rem;
               font-weight: 700;
-              line-height: 18px;
+              line-height: 1.8rem;
             }
           }
         }
@@ -85,9 +85,9 @@
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
     color: $color-primary-gray;
     text-align: center;
     align-self: center;
@@ -197,6 +197,10 @@
         #tax-type {
            border-left: none;
          }
+
+        #tax-type-2 {
+          border-left: none;
+        }
       }
 
       &-sliders {
@@ -214,9 +218,9 @@
             @include d-flex-between;
 
             label {
-              font-size: 16px;
+              font-size: 1.6rem;
               font-weight: 400;
-              line-height: 24px;
+              line-height: 2.4rem;
               text-align: left;
               display: flex;
               align-items: center;
@@ -229,9 +233,9 @@
             }
 
             p {
-              font-size: 16px;
+              font-size: 1.6rem;
               font-weight: 400;
-              line-height: 24px;
+              line-height: 2.4rem;
               text-align: right;
               color: $color-primary-gray;
             }
@@ -240,9 +244,9 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 2rem;
         text-align: left;
         color: $color-primary-gray;
       }
@@ -257,9 +261,9 @@
       @include d-flex-column-between;
 
       p:nth-child(1) {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 2.4rem;
       }
 
       .optimalRate {
@@ -292,9 +296,9 @@
       }
 
       p:last-child {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 2rem;
         color: $color-primary-gray;
         text-align: center;
 
@@ -323,9 +327,9 @@
       width: 50%;
       height: 100%;
       @include d-flex-center;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 2.4rem;
       border-bottom: 3px solid $color-primary-green;
     }
 
@@ -352,10 +356,10 @@
       width: 21.62%;
     }
 
-    p {
-      font-size: 16px;
+    .rates__footer-last{
+      font-size: 1.6rem;
       font-weight: 700;
-      line-height: 18px;
+      line-height: 1.8rem;
       color: $color-primary-green;
     }
   }
@@ -454,18 +458,18 @@
       }
 
       p:nth-child(1) {
-        font-size: 32px;
+        font-size: 3.2rem;
         font-weight: 700;
-        line-height: 37px;
+        line-height: 3.7rem;
         text-align: left;
         color: $color-primary-green;
         margin-bottom: 1.5rem;
       }
 
       p:nth-child(2) {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 2.4rem;
         text-align: left;
         color: $color-primary-white;
       }

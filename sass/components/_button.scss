@@ -29,3 +29,15 @@
   font-weight: 700;
   line-height: 1.84rem;
 }
+
+.btn-white {
+  @include d-flex-start;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  background-color: $color-primary-white;
+  color: #93A1AD;
+  padding-left: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
