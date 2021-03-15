@@ -1,342 +1,281 @@
-.landing {
+.landing-top {
+  height: 60.3rem;
+  margin-top: 8rem;
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-row-gap: 2.8rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  'heading heading right-1 right-2'
+  'left-1 left-2 slider  slider';
 
-  &-top {
-    height: 60.3rem;
-    margin-top: 8rem;
-    display: grid;
-    grid-column-gap: 3rem;
-    grid-row-gap: 2.8rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    'heading heading right-1 right-2'
-    'left-1 left-2 slider  slider';
+  &__heading {
+    grid-area: heading;
+    @include d-flex-column-evenly-start;
 
-    &__heading {
-      grid-area: heading;
-      @include d-flex-column-evenly-start;
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: $color-primary-gray;
+    }
+
+    .btn-transparent {
+      width: 37%;
 
       p {
         font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2.4rem;
-        color: $color-primary-gray;
-      }
-
-      .btn-transparent {
-        width: 37%;
-
-        p {
-          font-size: 1.6rem;
-          font-weight: 700;
-          line-height: 1.8rem;
-          color: $color-primary-green;
-        }
-      }
-    }
-
-    &__right-1 {
-      grid-area: right-1;
-      background-color: $color-primary-green;
-      background-image: url("../img/landing-right-1-bg.svg");
-    }
-
-    &__right-2 {
-      grid-area: right-2;
-      background-color: $color-primary-green;
-      background-image: url("../img/landing-right-2-bg.svg");
-    }
-
-    &__left-1 {
-      grid-area: left-1;
-      background-color: $color-primary-1A;
-      background-image: url("../img/landing-left-1-bg.svg");
-    }
-
-    &__left-2 {
-      grid-area: left-2;
-      background-color: $color-primary-1A;
-      background-image: url("../img/landing-left-2-bg.svg");
-    }
-
-    &__slider {
-      grid-area: slider;
-      padding: 2.4rem;
-      background-color: $color-background-gray;
-      @include d-flex-column-between-start;
-
-      &-heading {
-        font-size: 2.4rem;
         font-weight: 700;
-        line-height: 2.8rem;
-      }
-
-      &-center {
-        display: flex;
-        align-items: flex-start;
-        font-size: 1.6rem;
-        font-weight: 700;
-        line-height: 2.8rem;
-
-        .lts-center-img {
-          width: 1rem;
-          height: 2.8rem;
-          @include d-flex-center;
-          margin-right: 2rem;
-        }
-
-        .lts-center-text{
-          p:last-child {
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 2.4rem;
-            margin-top: 1.4rem;
-          }
-        }
-      }
-
-      &-bottom {
-        height: 4.4rem;
-        width: 100%;
-        @include d-flex-end;
-
-        .slider {
-          margin-right: 3rem;
-        }
-
-        .arrow-left-plain {
-          margin-right: 0.8rem;
-
-          a {
-            @include d-flex-center;
-          }
-        }
-
-
+        line-height: 1.8rem;
+        color: $color-primary-green;
       }
     }
   }
 
-  //--------------------end landing-top--------------------------------//
+  &__right-1 {
+    grid-area: right-1;
+    background-color: $color-primary-green;
+    background-image: url("../img/landing-right-1-bg.svg");
+  }
 
-  .options {
-    margin-top: 10.9rem;
-    height: 101.2rem;
+  &__right-2 {
+    grid-area: right-2;
+    background-color: $color-primary-green;
+    background-image: url("../img/landing-right-2-bg.svg");
+  }
+
+  &__left-1 {
+    grid-area: left-1;
+    background-color: $color-primary-1A;
+    background-image: url("../img/landing-left-1-bg.svg");
+  }
+
+  &__left-2 {
+    grid-area: left-2;
+    background-color: $color-primary-1A;
+    background-image: url("../img/landing-left-2-bg.svg");
+  }
+
+  &__slider {
+    grid-area: slider;
+    padding: 2.4rem;
     background-color: $color-background-gray;
+    @include d-flex-column-between-start;
 
-    &-i {
-      height: 100%;
-      padding-top: 8.8rem;
-      padding-bottom: 14.8rem;
-      display: grid;
-      grid-column-gap: 3rem;
-      grid-row-gap: 2.8rem;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 38.4rem 36.4rem;
-      grid-template-areas:
-              'left-top right-top'
-              'left-bottom right-bottom';
+    &-heading {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+    }
 
-      &__left-top {
-        grid-area: left-top;
-        @include d-flex-column-evenly-start;
+    &-center {
+      display: flex;
+      align-items: flex-start;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.8rem;
 
-        p {
-          font-size: 3.6rem;
-          font-weight: 700;
-          line-height: 4.4rem;
+      .lts-center-img {
+        width: 1rem;
+        height: 2.8rem;
+        @include d-flex-center;
+        margin-right: 2rem;
+      }
+
+      .lts-center-text{
+        p:last-child {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          margin-top: 1.4rem;
         }
+      }
+    }
 
-        div {
-          display: flex;
+    &-bottom {
+      height: 4.4rem;
+      width: 100%;
+      @include d-flex-end;
 
-          .block-img {
-            background-color: rgba(31, 167, 131, 0.15);
-            margin-right: 1.4rem;
-          }
+      .slider {
+        margin-right: 3rem;
+      }
 
-          p {
-            font-size: 1.6rem;
-            font-style: italic;
-            font-weight: 400;
-            line-height: 2.4rem;
-            color: $color-primary-gray;
-          }
-        }
+      .arrow-left-plain {
+        margin-right: 0.8rem;
 
-        .btn-green {
-          width: 48%;
+        a {
+          @include d-flex-center;
         }
       }
 
-      &__right-top {
-        grid-area: right-top;
-        position: relative;
-        background-image: url("../img/options-card-bg.svg");
-        @include bg-cover-center;
-        background-color: $color-primary-green;
 
-        .card-options {
-          color: $color-primary-white;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 50;
-          background-color: transparent;
+    }
+  }
+}
 
-          &__text {
-            border: 1px solid #1A8E6F;
+//--------------------end landing-top--------------------------------//
 
-            .text-inner {
+.options {
+  margin-top: 10.9rem;
+  height: 101.2rem;
+  background-color: $color-background-gray;
 
-              p {
-                color: $color-primary-white
-              }
-              &:not(:last-child) {
-                border-bottom: 1px solid #1A8E6F;
-              }
+  &-i {
+    height: 100%;
+    padding-top: 8.8rem;
+    padding-bottom: 14.8rem;
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 38.4rem 36.4rem;
+    grid-template-areas:
+            'left-top right-top'
+            'left-bottom right-bottom';
+
+    &__left-top {
+      grid-area: left-top;
+      @include d-flex-column-evenly-start;
+
+      p {
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 4.4rem;
+      }
+
+      div {
+        display: flex;
+
+        .block-img {
+          background-color: rgba(31, 167, 131, 0.15);
+          margin-right: 1.4rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 2.4rem;
+          color: $color-primary-gray;
+        }
+      }
+
+      .btn-green {
+        width: 48%;
+      }
+    }
+
+    &__right-top {
+      grid-area: right-top;
+      position: relative;
+      background-image: url("../img/options-card-bg.svg");
+      @include bg-cover-center;
+      background-color: $color-primary-green;
+
+      .card-options {
+        color: $color-primary-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        background-color: transparent;
+
+        &__text {
+          border: 1px solid #1A8E6F;
+
+          .text-inner {
+
+            p {
+              color: $color-primary-white
+            }
+            &:not(:last-child) {
+              border-bottom: 1px solid #1A8E6F;
             }
           }
         }
       }
-
-      &__lef-bottom {
-        grid-area: left-bottom;
-      }
-
-      &__right-bottom {
-        grid-area: right-bottom;
-      }
-
-
-    }
-  }
-
-  //--------------------end options--------------------------------//
-
-  .basic-services {
-
-    .services__top {
-      padding-bottom: 6.4rem;
-      @include d-flex-column-between-start;
     }
 
-    &__top {
-      color: $color-primary-white;
-
-      &-cards {
-        width: 100%;
-        height: 100%;
-        margin-top: 3.7rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 3rem;
-      }
+    &__lef-bottom {
+      grid-area: left-bottom;
     }
+
+    &__right-bottom {
+      grid-area: right-bottom;
+    }
+
 
   }
+}
 
-  //--------------------end basic-services--------------------------------//
+//--------------------end options--------------------------------//
 
-  .our-services {
-    width: 100%;
-    height: 43.6rem;
-    background-image: url("../img/our-services-bg.svg");
-    @include bg-cover-center;
-    position: relative;
-    margin-top: 8.8rem;
+.basic-services {
 
-    .services__top {
-      padding-bottom: 13.4rem;
-      height: 100%;
-    }
+  .services__top {
+    padding-bottom: 6.4rem;
+    @include d-flex-column-between-start;
   }
 
-  //--------------------end our-services--------------------------------//
+  &__top {
+    color: $color-primary-white;
 
-  .present {
-    margin-top: 8.4rem;
-    margin-bottom: 9.6rem;
-    height: 52rem;
-
-    h2 {
-      margin-left: 1.5rem;
-    }
-
-    &__block {
-      width: 100%;
-      margin-top: 3.9rem;
-      height: 44rem;
-      border: 1px solid $color-border-gray;
-    }
-
-  }
-
-  //--------------------end present--------------------------------//
-
-  .trust {
-    margin-top: 8.3rem;
-    margin-bottom: 8.8rem;
-  }
-
-  //--------------------end present--------------------------------//
-
-  .connection {
-    width: 100%;
-    height: 39.2rem;
-    background-image: url("../img/connection-bg.svg");
-    @include bg-cover-center;
-    position: relative;
-
-    &-i {
+    &-cards {
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 50;
-      background-color: transparent;
-      color: $color-primary-white;
-      padding-top: 4.4rem;
-      padding-bottom: 6.8rem;
-      @include d-flex-column-between-start;
-
-      &__data {
-        display: flex;
-
-        p {
-          font-size: 2.4rem;
-          font-weight: 400;
-          line-height: 2.4rem;
-          text-align: left;
-          margin-right: 3.2rem;
-        }
-      }
-
-      &__desc{
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 2rem;
-        color: $color-primary-gray;
-        margin-top: -2.5rem;
-      }
-
-    &__form  {
-        display: flex;
-        width: 100%;
-
-        .btn-white {
-          width: 27.5%;
-          margin-right: 1.6rem;
-        }
-
-        .btn-green {
-          width: 22%;
-        }
-      }
+      margin-top: 3.7rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 3rem;
     }
   }
-
-  //--------------------end connection--------------------------------//
 
 }
+
+//--------------------end basic-services--------------------------------//
+
+.our-services {
+  width: 100%;
+  height: 43.6rem;
+  background-image: url("../img/our-services-bg.svg");
+  @include bg-cover-center;
+  position: relative;
+  margin-top: 8.8rem;
+
+  .services__top {
+    padding-bottom: 13.4rem;
+    height: 100%;
+  }
+}
+
+//--------------------end our-services--------------------------------//
+
+.present {
+  margin-top: 8.4rem;
+  margin-bottom: 9.6rem;
+  height: 52rem;
+
+  h2 {
+    margin-left: 1.5rem;
+  }
+
+  &__block {
+    width: 100%;
+    margin-top: 3.9rem;
+    height: 44rem;
+    border: 1px solid $color-border-gray;
+  }
+
+}
+
+//--------------------end present--------------------------------//
+
+.trust {
+  margin-top: 8.3rem;
+  margin-bottom: 8.8rem;
+}
+
+//--------------------end trust--------------------------------//
+

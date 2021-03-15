@@ -11,7 +11,7 @@
 @import "components/button";
 @import "components/card";
 @import "components/arrow";
-@import "components/feature-box";
+@import "components/show_nav";
 @import "components/form";
 @import "components/popup";
 @import "components/story";
@@ -20,6 +20,9 @@
 @import "layout/main-header";
 @import "layout/header";
 @import "layout/stock";
+@import "layout/connection";
+@import "layout/trust";
 
 @import "pages/home";
 @import "pages/landing";
+@import "pages/page-services";

@@ -249,3 +249,47 @@
 
 
 }
+
+.card-page-services {
+  border: 1px solid $color-border-gray;
+  padding: 1.8rem 2.4rem 3.2rem 2.4rem;
+  @include d-flex-column-between-start;
+
+  &__top {
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    @include d-flex-between;
+
+    &-img {
+      width: 4.4rem;
+      height: 4.4rem;
+    }
+  }
+
+  &-empty {
+    @include d-flex-center;
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: $color-primary-green;
+    }
+  }
+
+  &-active {
+    background-color: $color-primary-green;
+    border: none;
+    color: $color-primary-white;
+  }
+}
+
+
