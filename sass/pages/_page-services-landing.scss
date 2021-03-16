@@ -1,22 +1,212 @@
 #page-services-landing {
+
+  .page-services-top {
+    height: 130rem;
+
+    &__heading {
+      height: 12.8rem;
+      padding-top: 4.9rem;
+    }
+
+    &__content {
+      display: flex;
+      width: 117.2rem;
+    }
+
+    &__left {
+      width: 23%;
+      height: 112.2rem;
+      margin-right: 11.26%;
+      margin-bottom: 5rem;
+
+      &-sidebar {
+        height: 77.8rem;
+        width: 100%;
+        margin-bottom: 3.4rem;
+        border: 1px solid $color-border-gray;
+        background-color: $color-background-gray;
+        padding-top: 1.2rem;
+
+        .p-s-t-sidebar-item {
+          width: 100%;
+          min-height: 5.6rem;
+          @include d-flex-start;
+          padding: 1.3rem 2.4rem;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          text-align: left;
+        }
+
+        .p-s-t-dropdown {
+          font-weight: 700;
+          background-color: $color-primary-white;
+          @include d-flex-between;
+
+          .dropdown {
+            position: relative;
+
+            &-icon {
+              @include d-flex-center;
+              cursor: pointer;
+            }
+
+            &-content {
+              display: none;
+              position: absolute;
+              background-color: $color-primary-white;
+              border: 1px solid $color-border-gray;
+              z-index: 50;
+              width: 22rem;
+              padding: 1rem;
+              transform: translateX(-80%);
+            }
+          }
+
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+        }
+
+        .p-s-t-active {
+          background-color: $color-primary-green;
+          color: $color-primary-white;
+        }
+      }
+
+      &-calculation {
+        height: 31.4rem;
+        width: 100%;
+        position: relative;
+        background-color: $color-primary-green;
+
+        .block-inner {
+          background-image: url("../img/p-s-l-bg.svg");
+
+          .inner {
+            padding: 2.2rem 2rem;
+
+            p:nth-child(1) {
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 3.2rem;
+              margin-bottom: -2rem;
+            }
+
+            .btn-transparent {
+              img {
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      height: 100%;
+      padding-top: 2rem;
+
+      h2 {
+        margin-bottom: 3.4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: left;
+        color: $color-primary-gray;
+      }
+
+      &-heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+        text-align: left;
+        margin-top: 5.4rem;
+        margin-bottom: 3.6rem;
+      }
+
+      &-bottom {
+        display: flex;
+        margin-bottom: 2.4rem;
+
+        .p-s-circle {
+          margin-right: 2rem;
+          margin-top: 0.6rem;
+          margin-left: 0.8rem;
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          background-color: $color-primary-green;
+        }
+      }
+
+      &-btn {
+        @include d-flex-column-between;
+        width: 47%;
+        margin-top: 4.8rem;
+
+
+        .btn-green {
+          width: 100%;
+          margin-bottom: 1.1rem;
+        }
+      }
+
+
+    }
+  }
+
+  .service-includes {
+    height: 56rem;
+    padding-top: 8rem;
+    @include d-flex-column-between-start;
+
+    &__content {
+      height: 34.2rem;
+      width: 100%;
+      display: grid;
+      grid-column-gap: 3rem;
+      grid-row-gap: 2.8rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+              'b-1 b-2 b-3'
+              'b-4 b-5 b-6';
+
+      div {
+        border: 1px solid $color-border-gray;
+        padding: 1.8rem 2.4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: left;
+
+        p:nth-child(1) {
+          margin-bottom: 2.4rem;
+        }
+
+        p:nth-child(2) {
+          color: $color-primary-gray;
+        }
+      }
+
+    }
+  }
   .rates {
     height: 77rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
-
-    &__heading {
-      font-size: 3.6rem;
-      font-weight: 700;
-      line-height: 4.8rem;
-      text-align: left;
-    }
 
     &__p {
       font-size: 1.6rem;
       font-weight: 700;
       line-height: 2.4rem;
       text-align: left;
-      margin-bottom: 3rem;
+      margin-top: -2rem;
     }
 
     &__footer {
@@ -35,6 +225,4 @@
       }
     }
   }
-
-
 }
