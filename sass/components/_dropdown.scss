@@ -1,0 +1,23 @@
+.dropdown {
+  position: relative;
+
+  &-icon {
+    @include d-flex-center;
+    cursor: pointer;
+  }
+
+  &-content {
+    display: none;
+    position: absolute;
+    background-color: $color-primary-white;
+    border: 1px solid $color-border-gray;
+    z-index: 50;
+    width: 22rem;
+    padding: 1rem;
+    transform: translateX(-80%);
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

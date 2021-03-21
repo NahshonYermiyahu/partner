@@ -1,0 +1,168 @@
+#tariffs {
+
+  .price-list {
+    height: 64.8rem;
+    display: flex;
+    background-color: $color-background-gray;
+
+    &__left {
+      width: 50%;
+      height: 100%;
+      @include d-flex-column-between-start;
+      padding: 4.9rem 0 18.5rem 0;
+
+      h2 {
+        line-height: 4.8rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-primary-gray;
+      }
+
+      &-btn {
+        width: 54%;
+        @include d-flex-column-between;
+        margin-top: 1.5rem;
+
+        .btn-green {
+          width: 100%;
+          margin-bottom: 1.1rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+        }
+      }
+    }
+
+    &__right {
+      width: 50%;
+      height: 100%;
+      padding: 10rem 0 7.6rem 0;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 2.4rem;
+      grid-template-areas:
+        'b1 b2'
+        'b3 b4';
+
+        .card-page-services {
+          background-color: $color-primary-white;
+        }
+    }
+  }
+
+  .tariffs-content {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    &__top {
+      @include d-flex-between;
+      width: 100%;
+
+      &-dropdown {
+        width: 32%;
+        height: 4.4rem;
+        @include d-flex-between;
+        padding: 1rem 1.6rem;
+        border: 1px solid $color-border-gray;
+
+         p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          text-align: left;
+         }
+      }
+
+      .btn-transparent {
+        width: 22%;
+      }
+    }
+
+    &__block {
+      width: 100%;
+      display: flex;
+      margin-top: 5rem;
+
+      &-left {
+        width: 34.24%;
+        @include d-flex-column-start-start;
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color:$color-primary-gray;
+          margin-top: 2.2rem;
+          margin-bottom: 3rem;
+        }
+
+        .btn-transparent {
+          width: 63%;
+        }
+
+      }
+
+      &-right {
+        width: 65.76%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: left;
+
+        table {
+          width: 100%;
+          border-spacing: 0;
+          margin-bottom: 3rem;
+        }
+
+        tr:nth-child(odd) {
+          background-color: $color-background-gray;
+        }
+
+        th {
+          border-bottom: 3px solid $color-primary-green;
+          font-weight: 700;
+        }
+
+        td, th {
+          padding: 1rem 0 1.4rem 1.6rem ;
+        }
+
+        .table-3 {
+
+          th,td:nth-child(1) {
+            width: 41%;
+          }
+
+          th,td:nth-child(2) {
+            width: 32%;
+          }
+
+          th,td:last-child {
+            width: 27%;
+          }
+        }
+
+        .table-2 {
+
+          th,td:nth-child(1) {
+            width: 73%;
+          }
+
+          th,td:last-child {
+            width: 27%;
+          }
+        }
+      }  
+    }
+  }
+}
