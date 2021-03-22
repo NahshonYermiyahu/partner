@@ -96,6 +96,7 @@
 
 .card-active {
   background-image: url("../img/card-active-bg.svg");
+
   @include bg-cover-center;
 
   .card {
