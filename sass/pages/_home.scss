@@ -21,19 +21,18 @@
         padding: 2.4rem 2.4rem 3.1rem 2.4rem;
         border: 1px solid $color-border-gray;
         width: 25.6%;
-         p {
-           font-size: 1.4rem;
-           font-weight: 400;
-           line-height: 2rem;
-           color: $color-primary-gray;
-         }
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+          color: $color-primary-gray;
+        }
       }
 
       &:last-child {
         width: 23.2%;
         position: relative;
         background-color: $color-primary-green;
-
       }
     }
   }
@@ -61,7 +60,7 @@
     height: 38rem;
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 50;
     display: flex;
@@ -127,7 +126,7 @@
     height: 42.4rem;
     margin: 0 11.46%;
     position: absolute;
-    top:38rem;
+    top: 38rem;
     left: 0;
     z-index: 50;
     background-color: $color-primary-white;
@@ -149,8 +148,8 @@
         display: flex;
 
         #tax-type {
-           border-left: none;
-         }
+          border-left: none;
+        }
 
         #tax-type-2 {
           border-left: none;
@@ -209,7 +208,7 @@
     &-right {
       width: 30%;
       height: 100%;
-      background-color: #F4F5F6;
+      background-color: #f4f5f6;
       padding-top: 5.4rem;
       padding-bottom: 5.9rem;
       @include d-flex-column-between;
@@ -265,36 +264,3 @@
 }
 
 //--------------------end services--------------------------------//
-
-.certificates {
-  height: 43rem;
-  padding-top: 4.3rem;
-
-  h2 {
-    text-align: left;
-  }
-
-  &__items {
-    width: 100%;
-    height: 25.6rem;
-    @include d-flex-between;
-    margin-top: 4rem;
-    position: relative;
-  }
-
-  &__item {
-    width: 23%;
-    height: 100%;
-    background-color: $color-background-gray;
-    @include d-flex-center;
-
-  }
-
-  &__slider {
-    width: 100%;
-    height: 4.4rem;
-    @include d-flex-center-end;
-  }
-}
-
-//--------------------end certificates--------------------------------//

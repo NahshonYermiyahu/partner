@@ -1,0 +1,418 @@
+#about {
+  .about-heading {
+    height: 26.4rem;
+    display: flex;
+
+    &__left {
+      width: 50%;
+      padding: 4.9rem 0 7.6rem 0;
+
+      h2 {
+        line-height: 4.8rem;
+      }
+
+      .show_nav {
+        margin-bottom: 2.3rem;
+      }
+    }
+
+    &__right {
+      width: 50%;
+      padding: 12.8rem 0 6.4rem 11rem;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: left;
+        color: $color-primary-gray;
+      }
+    }
+  }
+
+  .about-img {
+    width: 100%;
+    height: 44.2rem;
+    position: relative;
+    background-image: url(../img/about-img-bg.svg);
+    @include bg-cover-center;
+
+    &__win {
+      position: absolute;
+      width: 24.3%;
+      height: 32.6rem;
+      top: 21.4rem;
+      left: 16.5rem;
+      z-index: 50;
+      background-color: $color-primary-green;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 3.6rem 0 2.8rem 3.3rem;
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        color: $color-primary-white;
+      }
+    }
+  }
+
+  .granting {
+    height: 50.9rem;
+    margin-top: 11.2rem;
+    display: flex;
+
+    &__left {
+      width: 53.4%;
+      height: 47.8rem;
+      position: relative;
+
+      &-bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 94%;
+        height: 35.9rem;
+        background-image: url(../img/granting-gray.svg);
+        @include bg-contain-center;
+      }
+
+      &-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+        width: 88.3%;
+        height: 100%;
+        background-image: url(../img/granting.svg);
+        @include bg-contain-center;
+      }
+    }
+
+    &__right {
+      width: 46.6%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-left: 6.1rem;
+      padding-top: 7.4rem;
+
+      h2 {
+        line-height: 4.8rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-primary-gray;
+      }
+
+      &-btn {
+        width: 65%;
+        @include d-flex-column-between;
+        margin-top: 1.5rem;
+
+        .btn-green {
+          width: 100%;
+          margin-bottom: 1.1rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  .why {
+    height: 41rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12.1rem;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 1rem;
+
+      h2 {
+        line-height: 4.8rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-primary-gray;
+
+        &:last-child {
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.8rem;
+          color: $color-primary-0B;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    height: 90.4rem;
+    padding-top: 7.6rem;
+    padding-bottom: 10.4rem;
+    margin-top: 14.4rem;
+    background-color: $color-background-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      line-height: 4.8rem;
+      align-self: flex-start;
+    }
+
+    .benefits__cards {
+      width: 100%;
+      height: 42.4rem;
+      margin-top: 4rem;
+      margin-bottom: 4.8rem;
+      display: grid;
+      border-right: 1px solid $color-border-gray;
+      border-bottom: 1px solid $color-border-gray;
+
+      grid-template-columns: repeat (3, 1fr);
+      grid-template-rows: repeat (2, 1fr);
+      grid-template-areas:
+        "card-1 card-2 card-3"
+        "card-4 card-5 card-6";
+
+      [class^="card-"] {
+        padding: 2.4rem;
+        border-left: 1px solid $color-border-gray;
+        border-top: 1px solid $color-border-gray;
+
+        div {
+          width: 4.4rem;
+          height: 4.4rem;
+          border-radius: 50%;
+          background-color: rgba(31, 167, 131, 0.15);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        h4 {
+          margin-top: 2rem;
+          margin-bottom: 1.3rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+          text-align: left;
+          color: $color-primary-gray;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 2.8rem;
+      color: $color-primary-gray;
+    }
+
+    .btn-transparent {
+      margin-top: 3.6rem;
+      width: 23%;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.8rem;
+        color: $color-primary-green;
+      }
+    }
+  }
+
+  .consultants {
+    height: 46.8rem;
+    margin-top: 13.2rem;
+    margin-bottom: 11.6rem;
+    display: flex;
+
+    &__left {
+      width: 50%;
+
+      h2 {
+        line-height: 4.8rem;
+      }
+
+      &-p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        color: $color-primary-gray;
+        margin-top: 2.6rem;
+        margin-bottom: 3.8rem;
+      }
+
+      &-btn {
+        width: 55%;
+        @include d-flex-column-between;
+        margin-top: 1.5rem;
+
+        .btn-green {
+          width: 100%;
+          margin-bottom: 1.1rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2rem;
+          color: $color-primary-gray;
+        }
+      }
+    }
+
+    &__right {
+      width: 50%;
+
+      &-slider {
+        height: 44.4rem;
+        position: relative;
+
+        .slider-blocks {
+          display: flex;
+          overflow: hidden;
+
+          .slider-block {
+            height: 100%;
+            min-width: 63%;
+            border: 1px solid $color-border-gray;
+            margin-right: 3rem;
+
+            &__text {
+              height: 8.8rem;
+              padding-top: 1.8rem;
+              padding-left: 2.4rem;
+
+              p {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                text-align: left;
+
+                &:last-child {
+                  color: $color-primary-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .slider {
+      height: 2.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+
+  .cost {
+    width: 100%;
+    height: 68rem;
+    margin-bottom: 5.5rem;
+    background-image: url(../img/cost-bg.svg);
+    @include bg-cover-center;
+    position: relative;
+
+    &-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      padding-top: 10.6rem;
+      padding-bottom: 12rem;
+      color: $color-primary-white;
+
+      &__top {
+        display: flex;
+
+        div {
+          width: 50%;
+
+          &:last-child {
+            padding-left: 10%;
+          }
+
+          h2 {
+            line-height: 4.4rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.8rem;
+            text-align: left;
+            margin-top: 7rem;
+          }
+
+          .btn-green {
+            width: 46%;
+            margin-top: 2.7rem;
+          }
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        padding-top: 10.7rem;
+
+        div {
+          width: 50%;
+
+          &:last-child {
+            padding-left: 10%;
+          }
+
+          p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            text-align: left;
+          }
+        }
+
+        .cost-badge-check {
+          display: flex;
+          width: 100%;
+          margin-bottom: 2.8rem;
+
+          p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 2.8rem;
+            text-align: left;
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,19 +1,19 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-*:focus{outline: none;}
+*:focus {
+  outline: none;
+}
 
 html {
-    // This defines what 1rem is
+  // This defines what 1rem is
   //font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   //1em = 16px
-
-
 
   font-size: 44%;
 
@@ -80,7 +80,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   max-width: 100%;
   margin: 0 auto;
   //max-width: 1440px;
@@ -94,15 +94,17 @@ a {
   @include d-flex-center;
 }
 
-ul {
-  list-style: none;
-}
-
 img {
   max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -116,9 +118,4 @@ button {
 .container {
   width: 100%;
   padding: 0 11.46%;
-}
-
-::selection {
-   //background-color: $color-primary;
-   //color: white;
 }

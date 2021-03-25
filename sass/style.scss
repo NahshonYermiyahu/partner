@@ -17,7 +17,6 @@
 @import "components/block-inner";
 @import "components/dropdown";
 
-
 @import "layout/footer";
 @import "layout/main-header";
 @import "layout/header";
@@ -26,10 +25,13 @@
 @import "layout/trust";
 @import "layout/benefit";
 @import "layout/rates";
+@import "layout/rates";
+@import "layout/certificates";
 
 @import "pages/home";
 @import "pages/landing";
 @import "pages/page-services";
 @import "pages/page-services-landing";
 @import "pages/tariffs";
-
+@import "pages/about";
+@import "pages/contacts";
